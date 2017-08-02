@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		28A0487E1F3233D90016BF13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0487D1F3233D90016BF13 /* AppDelegate.swift */; };
-		28A048801F3233D90016BF13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0487F1F3233D90016BF13 /* ViewController.swift */; };
 		28A048831F3233D90016BF13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A048811F3233D90016BF13 /* Main.storyboard */; };
 		28A048851F3233D90016BF13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A048841F3233D90016BF13 /* Assets.xcassets */; };
 		28A048881F3233D90016BF13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A048861F3233D90016BF13 /* LaunchScreen.storyboard */; };
+		28A048911F323FC00016BF13 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A048901F323FC00016BF13 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28A0487A1F3233D90016BF13 /* StudentPUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentPUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A0487D1F3233D90016BF13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28A0487F1F3233D90016BF13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28A048821F3233D90016BF13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28A048841F3233D90016BF13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A048871F3233D90016BF13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A048891F3233D90016BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28A048901F323FC00016BF13 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				28A0487D1F3233D90016BF13 /* AppDelegate.swift */,
-				28A0487F1F3233D90016BF13 /* ViewController.swift */,
-				28A048811F3233D90016BF13 /* Main.storyboard */,
+				28A048921F323FC40016BF13 /* Models */,
+				28A048941F3243190016BF13 /* Model Controllers */,
+				28A048931F3243120016BF13 /* UI */,
+				28A0488F1F3235E90016BF13 /* Resources */,
+			);
+			path = StudentPUT;
+			sourceTree = "<group>";
+		};
+		28A0488F1F3235E90016BF13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				28A048841F3233D90016BF13 /* Assets.xcassets */,
 				28A048861F3233D90016BF13 /* LaunchScreen.storyboard */,
 				28A048891F3233D90016BF13 /* Info.plist */,
 			);
-			path = StudentPUT;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		28A048921F323FC40016BF13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28A048901F323FC00016BF13 /* Student.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		28A048931F3243120016BF13 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28A048811F3233D90016BF13 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		28A048941F3243190016BF13 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A048801F3233D90016BF13 /* ViewController.swift in Sources */,
 				28A0487E1F3233D90016BF13 /* AppDelegate.swift in Sources */,
+				28A048911F323FC00016BF13 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +333,7 @@
 				28A0488E1F3233D90016BF13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
